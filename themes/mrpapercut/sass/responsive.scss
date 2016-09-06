@@ -1,0 +1,23 @@
+@media screen and (min-width: 40.5em) {
+    body {
+        font-size: 1em;
+    }
+
+    #header {
+        #icons {
+            right: calc(50% - 480px - .5em);
+            box-shadow: 4px 4px 0px #000, 0px 0px 2px #000;
+
+            .icon {
+                clear: none;
+                font-size: 2em;
+            }
+        }
+    }
+
+    .container {
+        p {
+            font-size: 1.2em;
+        }
+    }
+}

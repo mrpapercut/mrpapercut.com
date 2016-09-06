@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'FFF-Forward';
+    src: url('../fonts/FFF-Forward.ttf.woff') format('woff'),
+        url('../fonts/FFF-Forward.ttf.svg#FFF-Forward') format('svg'),
+        url('../fonts/FFF-Forward.ttf.eot'),
+        url('../fonts/FFF-Forward.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url('../fonts/OpenSansLatin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/FontAwesome.eot');
+  src: url('../fonts/FontAwesome.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/FontAwesome.woff2') format('woff2'),
+    url('../fonts/FontAwesome.woff') format('woff');
+  font-style: normal;
+  font-weight: normal;
+}

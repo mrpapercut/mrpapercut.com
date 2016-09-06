@@ -1,0 +1,129 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    background: #a7cfdf;
+    background: -moz-linear-gradient(top, #a7cfdf 0%, #23538a 100%);
+    background: -webkit-linear-gradient(top, #a7cfdf 0%,#23538a 100%);
+    background: linear-gradient(to bottom, #a7cfdf 0%,#23538a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 );
+    margin-bottom: 1em;
+    font-family: 'Open Sans';
+    font-size: .8em;
+
+	&:before {
+		content: attr(data-content);
+        position: fixed;
+        word-break: break-all;
+        opacity: 0.25;
+        overflow: hidden;
+        max-height: 100%;
+		font-size: .8em;
+		top: 0;
+        z-index: -1;
+    }
+}
+
+#header {
+    width: 100%;
+    position: relative;
+	text-align: center;
+
+    h1 {
+		font-size: 1em;
+
+		#logo {
+			color: #fff;
+			font-family: 'FFF-Forward';
+			font-size: 2em;
+			margin: 0 auto;
+			padding: .5em;
+			text-shadow: 4px 4px 0px #000, 0px 0px 2px #000;
+			text-decoration: none;
+		}
+	}
+
+    #icons {
+        background: #fff;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .icon {
+        font-family: 'FontAwesome';
+        text-decoration: none;
+        color: #444;
+        font-size: 1.9em;
+        z-index: 0;
+        clear: both;
+        float: left;
+        margin: 0 .25em;
+
+        &:hover {
+            color: #333;
+        }
+
+        &.github:before {
+            content: '\f09b';
+        }
+
+        &.twitter:before {
+            content: '\f099';
+        }
+    }
+}
+
+.container {
+    box-shadow: 4px 4px 0px #000, 0px 0px 2px #000;
+    background: #fff;
+    clear: both;
+    color: #444;
+    margin: 0 auto 1em;
+    padding: .5em;
+    width: calc(100% - 1em);
+    max-width: 960px;
+
+    &:empty {
+        display: none;
+    }
+
+    h1 {
+        border-bottom: 1px solid #e5e5e5;
+        text-indent: .5em;
+    }
+
+	h3 {
+		float: left;
+	}
+
+    p {
+        line-height: 1.2em;
+        padding: 0 .5em;
+
+		&.date {
+			float: right;
+		}
+
+		&.description {
+			clear: both;
+		}
+    }
+
+    a {
+        color: #23538a;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: #0a3a71;
+            text-decoration: underline;
+        }
+
+        &:active,
+        &:hover {
+            outline: 0;
+        }
+    }
+}
