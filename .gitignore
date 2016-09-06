@@ -10,3 +10,5 @@ content-sample
 node_modules
 vendor/twig/twig/doc
 vendor/twig/twig/test
+themes/default
+themes/mrpapercut/public
