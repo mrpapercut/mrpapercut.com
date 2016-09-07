@@ -48,7 +48,7 @@
 
 	{% if pages is not empty %}
 	<div class="container related">
-		<h2>Related articles for tags <span class="tags">{{ meta.tags|join(', ') }}</span></h2>
+		<h2>Related articles for <span class="tags">{{ meta.tags|join(', ') }}</span></h2>
 		<ul>
 		{% for page in pages if page.title %}
 			<li>
