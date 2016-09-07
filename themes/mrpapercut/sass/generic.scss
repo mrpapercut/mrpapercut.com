@@ -6,7 +6,7 @@ body {
     background: #a7cfdf;
     margin: 0 auto 1em;
     font-family: 'Open Sans';
-    font-size: .8em;
+    font-size: 1em;
 	width: 100%;
 	max-width: 960px;
 	position: relative;
@@ -48,35 +48,41 @@ body {
 		}
 	}
 
-    #icons {
-        background: #fff;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
+	.subtitle {
+		font-style: italic;
+		color: $darkblue;
+		text-shadow: 1px 1px 0px #fff, 0px 0px 2px #fff;
+	}
+}
 
-    .icon {
-        font-family: 'FontAwesome';
-        text-decoration: none;
-        color: #444;
-        font-size: 1.9em;
-        z-index: 0;
-        clear: both;
-        float: left;
-        margin: 0 .25em;
+#icons {
+	background: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
 
-        &:hover {
-            color: #333;
-        }
+.icon {
+	font-family: 'FontAwesome';
+	text-decoration: none;
+	color: #444;
+	font-size: 1.9em;
+	z-index: 0;
+	clear: both;
+	float: left;
+	margin: 0 .25em;
 
-        &.github:before {
-            content: '\f09b';
-        }
+	&:hover {
+		color: #333;
+	}
 
-        &.twitter:before {
-            content: '\f099';
-        }
-    }
+	&.github:before {
+		content: '\f09b';
+	}
+
+	&.twitter:before {
+		content: '\f099';
+	}
 }
 
 .container {
