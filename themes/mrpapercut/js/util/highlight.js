@@ -12,13 +12,13 @@ import xml        from 'highlight.js/lib/languages/xml';
 
 const highlightSyntax = () => {
 	const languages = {
-		'bash': bash,
-		'css': css,
-		'js': javascript,
-		'json': json,
-		'php': php,
-		'scss': scss,
-		'html': xml
+		bash,
+		css,
+		javascript,
+		json,
+		php,
+		scss,
+		xml
 	};
 
 	for (const i in languages) registerLanguage(i, languages[i]);
