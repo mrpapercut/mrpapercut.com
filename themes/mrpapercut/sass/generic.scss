@@ -4,15 +4,18 @@ html {
 
 body {
     background: #a7cfdf;
-    background: -moz-linear-gradient(top, #a7cfdf 0%, #23538a 100%);
-    background: -webkit-linear-gradient(top, #a7cfdf 0%,#23538a 100%);
-    background: linear-gradient(to bottom, #a7cfdf 0%,#23538a 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 );
-    margin-bottom: 1em;
+    margin: 0 auto 1em;
     font-family: 'Open Sans';
     font-size: .8em;
+	width: 100%;
+	max-width: 960px;
+	position: relative;
 
 	&:before {
+		background: -moz-linear-gradient(top, #a7cfdf 0%, #23538a 100%);
+		background: -webkit-linear-gradient(top, #a7cfdf 0%,#23538a 100%);
+		background: linear-gradient(to bottom, #a7cfdf 0%,#23538a 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 );
 		content: attr(data-content);
         position: fixed;
         word-break: break-all;
@@ -21,6 +24,7 @@ body {
         max-height: 100%;
 		font-size: .8em;
 		top: 0;
+		left: 0;
         z-index: -1;
     }
 }
@@ -100,7 +104,6 @@ body {
 
     p {
         line-height: 1.2em;
-        padding: 0 .5em;
 
 		&.date {
 			float: right;
@@ -112,12 +115,12 @@ body {
     }
 
     a {
-        color: #23538a;
+        color: $blue;
         text-decoration: none;
 
         &:hover,
         &:focus {
-            color: #0a3a71;
+            color: $darkblue;
             text-decoration: underline;
         }
 
@@ -126,4 +129,11 @@ body {
             outline: 0;
         }
     }
+
+	&.related {
+		.tags {
+			text-style: italic;
+			color: $orange;
+		}
+	}
 }

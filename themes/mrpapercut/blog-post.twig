@@ -6,9 +6,23 @@
     <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
     {% if meta.description %}
         <meta name="description" content="{{ meta.description|striptags }}">
-    {% endif %}{% if meta.robots %}
+	{% else %}
+		<meta name="description" content="Mr. Papercut: Javascript, web security, XSS, codegolf, obfuscation, malware analysis and not particularly useful scripts">
+    {% endif %}
+	{% if meta.robots %}
         <meta name="robots" content="{{ meta.robots }}">
     {% endif %}
+	<meta name="author" content="Mischa Rodermond">
+
+	<meta property="fb:admins" content="758023081" />
+	<meta property="og:title" content="Mr. Papercut"/>
+	<meta property="og:url" content="https://mrpapercut.com"/>
+	<meta property="og:image" content="{{ theme_url }}/assets/touch-icon.png"/>
+	<meta property="og:description" content="Mr. Papercut: Javascript, web security, XSS, codegolf, obfuscation, malware analysis and not particularly useful scripts"/>
+	<!-- TradeDoubler site verification 2358735 -->
+
+	<link rel="shortcut icon" href="{{ theme_url }}/assets/favicon.ico">
+	<link rel="apple-touch-icon" href="{{ theme_url }}/assets/touch-icon.png">
 
     <link rel="stylesheet" href="{{ theme_url }}/public/main.css" type="text/css" />
 
@@ -21,13 +35,28 @@
     <header id="header">
         <div class="inner clearfix">
             <h1><a href="{{ "index"|link }}" id="logo">{{ site_title }}</a></h1>
-		</div>
-	</header>
+			<h2 class="subtitle">Javascript, web security, XSS, codegolf, obfuscation, malware analysis</h2>
+            <nav></nav>
+        </div>
+    </header>
 
 	<div id="content">
 		<div class="container">
 			{{ content }}
 		</div>
 	</div>
+
+	{% if pages is not empty %}
+	<div class="container related">
+		<h2>Related articles for tags <span class="tags">{{ meta.tags|join(', ') }}</span></h2>
+		<ul>
+		{% for page in pages if page.title %}
+			<li>
+				<a href="{{ page.url }}">{{ page.title }}</a>
+			</li>
+		{% endfor %}
+		</ul>
+	</div>
+	{% endif %}
 </body>
 </html>

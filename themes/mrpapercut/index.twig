@@ -7,7 +7,7 @@
     {% if meta.description %}
         <meta name="description" content="{{ meta.description|striptags }}">
 	{% else %}
-		<meta name="description" content="Mr. Papercut: webprogramming made simple.">
+		<meta name="description" content="Mr. Papercut: Javascript, web security, XSS, codegolf, obfuscation, malware analysis and not particularly useful scripts">
     {% endif %}
 	{% if meta.robots %}
         <meta name="robots" content="{{ meta.robots }}">
@@ -16,15 +16,13 @@
 
 	<meta property="fb:admins" content="758023081" />
 	<meta property="og:title" content="Mr. Papercut"/>
-	<meta property="og:url" content="http://mrpapercut.com"/>
-	<meta property="og:image" content="http://mrpapercut.com/images/touch-icon.png"/>
-	<meta property="og:description" content="Mr. Papercut: Developing webnonsense and webbrilliance"/>
+	<meta property="og:url" content="https://mrpapercut.com"/>
+	<meta property="og:image" content="{{ theme_url }}/assets/touch-icon.png"/>
+	<meta property="og:description" content="Mr. Papercut: Javascript, web security, XSS, codegolf, obfuscation, malware analysis and not particularly useful scripts"/>
 	<!-- TradeDoubler site verification 2358735 -->
 
-	<link rel="alternate" type="application/rss+xml" title="Mr. Papercut RSS Feed" href="rss.xml">
-
-	<link rel="shortcut icon" href="//www.mrpapercut.com/images/favicon.ico">
-	<link rel="apple-touch-icon" href="//www.mrpapercut.com/images/touch-icon.png">
+	<link rel="shortcut icon" href="{{ theme_url }}/assets/favicon.ico">
+	<link rel="apple-touch-icon" href="{{ theme_url }}/assets/touch-icon.png">
 
     <link rel="stylesheet" href="{{ theme_url }}/public/main.css" type="text/css" />
 
@@ -37,6 +35,7 @@
     <header id="header">
         <div class="inner clearfix">
             <h1><a href="{{ "index"|link }}" id="logo">{{ site_title }}</a></h1>
+			<h2 class="subtitle">Javascript, web security, XSS, codegolf, obfuscation, malware analysis</h2>
             <nav></nav>
         </div>
     </header>
@@ -55,9 +54,8 @@
 				<div class="container">
 					<h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
 					<p class="date">{{ page.date }}</p>
-					{% if page.description %}
-					<p class="description">{{ page.description }}</p>
-					{% endif %}
+					{% if page.description %}<p class="description">{{ page.description }}</p>{% endif %}
+					{% if page.meta.tags %}<span class="tags">Tags: {{ page.meta.tags }}</span>{% endif %}
 					<a href="{{ page.url }}" class="readmore">Read more</a>
 				</div>
 			{% endif %}

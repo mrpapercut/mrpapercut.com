@@ -3,6 +3,8 @@ Title: Non-Alphanumeric JS obfuscator
 Date: 2016-09-06 13:22
 Template: blog-post
 Description: Non-Alphanumeric JS obfuscator
+Tags: javascript, obfuscation
+Filter: javascript, obfuscation
 ---
 
 # Non-Alphanumeric JS obfuscator
