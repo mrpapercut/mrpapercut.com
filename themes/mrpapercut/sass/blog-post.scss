@@ -1,0 +1,17 @@
+#content.blog-post {
+	img {
+		margin: 0 auto;
+		max-width: 90%;
+		display: block;
+		border: 5px solid #e5e5e5;
+		box-shadow: 2px 2px 5px #ccc;
+
+		& + em {
+			clear: both;
+			display: block;
+			text-align: center;
+			margin-top: .5em;
+			font-size: .9em;
+		}
+	}
+}

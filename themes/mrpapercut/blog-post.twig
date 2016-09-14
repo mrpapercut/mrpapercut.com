@@ -35,12 +35,12 @@
     <header id="header">
         <div class="inner clearfix">
             <h1><a href="{{ "index"|link }}" id="logo">{{ site_title }}</a></h1>
-			<h2 class="subtitle">Javascript, web security, XSS, codegolf, obfuscation, malware analysis</h2>
+			<h2 class="subtitle">Javascript and web security</h2>
             <nav></nav>
         </div>
     </header>
 
-	<div id="content">
+	<div id="content" class="blog-post">
 		<div class="container">
 			{{ content }}
 		</div>
@@ -50,7 +50,7 @@
 	<div class="container related">
 		<h2>Related articles for <span class="tags">{{ meta.tags|join(', ') }}</span></h2>
 		<ul>
-		{% for page in pages if page.title %}
+		{% for page in pages if page.title and page.title != meta.title %}
 			<li>
 				<a href="{{ page.url }}">{{ page.title }}</a>
 			</li>
