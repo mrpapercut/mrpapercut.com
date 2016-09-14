@@ -11,7 +11,6 @@ body {
 	max-width: 960px;
 	position: relative;
 
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 );
 	&:before {
 		background: -moz-linear-gradient(top, $blue 0%, $darkblue 100%);
 		background: -webkit-linear-gradient(top, $blue 0%, $darkblue 100%);
@@ -92,8 +91,8 @@ body {
     clear: both;
     color: #444;
     margin: 0 auto 1em;
-    padding: .5em;
-    width: calc(100% - 1em);
+    padding: 1em;
+    width: calc(100% - 2em);
     max-width: 960px;
 
     &:empty {
