@@ -106,10 +106,12 @@ body {
 
 	h3 {
 		float: left;
+		clear: both;
 	}
 
     p {
         line-height: 1.2em;
+		clear: both;
 
 		&.date {
 			float: right;
