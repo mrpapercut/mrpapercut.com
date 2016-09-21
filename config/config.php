@@ -39,8 +39,13 @@ $config['theme'] = 'mrpapercut';                // Set the theme (defaults to "d
 // $config['date_format'] = '%D %T';            // Set the PHP date format as described here: http://php.net/manual/en/function.strftime.php
 // $config['pages_order_by'] = 'alpha';         // Order pages by "alpha" or "date"
 // $config['pages_order'] = 'asc';              // Order pages "asc" or "desc"
-// $config['content_dir'] = 'content-sample/';  // Content directory
-// $config['content_ext'] = '.md';              // File extension of content files to serve
+$config['content_dir'] = 'content/';  // Content directory
+$config['content_ext'] = '.md';              // File extension of content files to serve
+
+/*
+ * PICO EDIT
+ */
+$config['pico_edit_default_author'] = 'Mr. Papercut';
 
 /*
  * TIMEZONE
