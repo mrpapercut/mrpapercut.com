@@ -4,6 +4,7 @@ Date: 2016-09-16 11:43
 Template: blog-post
 Description: How to safely analyse email-attachment and search for malware downloaders
 Tags: malware, tools
+Filter: malware, tools
 ---
 
 # Analysing email malware attachments

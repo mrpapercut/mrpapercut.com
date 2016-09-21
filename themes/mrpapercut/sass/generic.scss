@@ -107,15 +107,18 @@ body {
 	h3 {
 		float: left;
 		clear: both;
+		margin-top: 0;
+	}
+
+	span {
+		&.date {
+			float: right;
+		}
 	}
 
     p {
         line-height: 1.2em;
 		clear: both;
-
-		&.date {
-			float: right;
-		}
 
 		&.description {
 			clear: both;
