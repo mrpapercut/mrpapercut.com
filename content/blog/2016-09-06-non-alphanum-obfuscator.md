@@ -5,6 +5,7 @@ Template: blog-post
 Description: Non-Alphanumeric JS obfuscator
 Tags: javascript, obfuscation
 Filter: javascript, obfuscation
+Published: true
 ---
 
 # Non-Alphanumeric JS obfuscator
