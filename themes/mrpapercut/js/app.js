@@ -1,5 +1,5 @@
 'use strict';
-console.log('wtf');
+
 require('../sass/app.scss');
 
 import 'core-js/fn/array/from';
