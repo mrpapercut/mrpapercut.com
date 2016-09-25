@@ -69,6 +69,8 @@ class PicoTags extends AbstractPicoPlugin
             $tagsToShow = $currentPage['meta']['filter'];
 
             $pages = array_filter($pages, function ($page) use ($tagsToShow) {
+				if ($page['meta']['published'] !== true) return false;
+
                 $tags = PicoTags::parseTags($page['meta']['tags']);
                 return count(array_intersect($tagsToShow, $tags)) > 0;
             });
