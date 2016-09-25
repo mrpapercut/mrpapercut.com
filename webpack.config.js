@@ -5,7 +5,10 @@ var path = require('path');
 var extractSass = new ExtractTextPlugin('main.css');
 var DEV = process.env.NODE_ENV === 'dev';
 
-var PLUGINS = [extractSass];
+var PLUGINS = [
+	extractSass,
+	new webpack.OldWatchingPlugin()
+];
 
 if (!DEV) PLUGINS.push(
 	new webpack.optimize.UglifyJsPlugin({minimize: true}),
@@ -23,6 +26,7 @@ module.exports = {
 		filename: 'bundle.js'
 	},
 	devtool: DEV ? 'cheap-module-eval-source-map' : false,
+	watch: DEV,
 	module: {
 		preLoaders: [{
 			test: /\.js?$/,
