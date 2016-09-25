@@ -134,8 +134,9 @@ body {
 
 	&.related {
 		.tags {
-			text-style: italic;
+			font-style: italic;
 			color: $orange;
+			float: none;
 		}
 	}
 }
