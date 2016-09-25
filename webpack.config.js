@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var path = require('path');
 
 var extractSass = new ExtractTextPlugin('main.css');
 var DEV = process.env.NODE_ENV === 'dev';
@@ -16,9 +17,9 @@ if (!DEV) PLUGINS.push(
 );
 
 module.exports = {
-	entry: './themes/mrpapercut/js/app.js',
+	entry: path.resolve(__dirname, './themes/mrpapercut/js/app.js'),
 	output: {
-		path: __dirname + '/themes/mrpapercut/public/',
+		path: path.resolve(__dirname, './themes/mrpapercut/public/'),
 		filename: 'bundle.js'
 	},
 	devtool: DEV ? 'cheap-module-eval-source-map' : false,
