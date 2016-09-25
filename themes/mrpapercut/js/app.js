@@ -1,5 +1,5 @@
 'use strict';
-
+console.log('wtf');
 require('../sass/app.scss');
 
 import 'core-js/fn/array/from';
@@ -22,6 +22,4 @@ class App {
 	}
 }
 
-window.addEventListener('load', () => {
-	return new App()
-});
+window.addEventListener('load', () => new App());
