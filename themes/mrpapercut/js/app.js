@@ -22,4 +22,6 @@ class App {
 	}
 }
 
-window.addEventListener('load', () => new App());
+window.addEventListener('load', () => {
+	return new App()
+});
