@@ -7,7 +7,6 @@ composer.lock
 plugins/pico_edit/config.php
 google*.html
 robots.txt
-favicon.ico
 
 # folders
 content-sample
