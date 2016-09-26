@@ -12,3 +12,6 @@ vendor/twig/twig/doc
 vendor/twig/twig/test
 themes/default
 themes/mrpapercut/public
+sites
+git
+_archive
