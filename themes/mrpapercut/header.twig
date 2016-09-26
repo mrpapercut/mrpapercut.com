@@ -5,12 +5,12 @@
 
     <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
     {% if meta.description %}
-        <meta name="description" content="{{ meta.description|striptags }}">
+	<meta name="description" content="{{ meta.description|striptags }} | Mr. Papercut">
 	{% else %}
-		<meta name="description" content="Mr. Papercut: Javascript, web security, XSS, codegolf, obfuscation, malware analysis and not particularly useful scripts">
+	<meta name="description" content="Mr. Papercut: Javascript, web security, XSS, codegolf, obfuscation, malware analysis and not particularly useful scripts">
     {% endif %}
 	{% if meta.robots %}
-        <meta name="robots" content="{{ meta.robots }}">
+	<meta name="robots" content="{{ meta.robots }}">
     {% endif %}
 	<meta name="author" content="Mischa Rodermond">
 
@@ -19,7 +19,6 @@
 	<meta property="og:url" content="https://mrpapercut.com"/>
 	<meta property="og:image" content="{{ theme_url }}/assets/touch-icon.png"/>
 	<meta property="og:description" content="Mr. Papercut: Javascript, web security, XSS, codegolf, obfuscation, malware analysis and not particularly useful scripts"/>
-	<!-- TradeDoubler site verification 2358735 -->
 
 	<link rel="shortcut icon" href="{{ theme_url }}/assets/favicon.ico">
 	<link rel="apple-touch-icon" href="{{ theme_url }}/assets/touch-icon.png">
