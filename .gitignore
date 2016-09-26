@@ -4,6 +4,7 @@ CONTRIBUTING.md
 README.md
 composer.json
 composer.lock
+plugins/pico_edit/config.php
 
 # folders
 content-sample
